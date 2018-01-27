@@ -1,8 +1,14 @@
 // Mixins
 
 // Mobile breakpoints
-@mixin bp-mobile {
-  @media screen and (max-width: $bp-mobile) {
+@mixin bp-middle {
+  @media screen and (max-width: $bp-middle) {
+    @content;
+  }
+}
+
+@mixin bp-small {
+  @media screen and (max-width: $bp-small) {
     @content;
   }
 }

@@ -42,7 +42,7 @@
     }
   }
   
-  @include bp-mobile {
+  @include bp-small {
     margin: 0;
 
     .o-grid__item:not(.o-grid__item--inflexible) {

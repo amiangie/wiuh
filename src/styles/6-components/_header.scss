@@ -1,0 +1,49 @@
+// Header
+$clr-link: $color-white;
+$clr-link-hover: $color-red;
+$clr-link-border: $color-black;
+
+.c-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+  
+  @include bp-middle {
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  
+  @include bp-small {
+    flex-direction: column;
+  }
+}
+
+.c-header__link {
+  position: relative;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: .025em;
+  color: $clr-link;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: .2rem;
+    height: .3rem;
+    width: 100%;
+    display: block;
+    background: $clr-link-border;
+    transition: height .25s;
+  }
+  
+  &:hover {
+    color: $clr-link;
+  }
+  
+  &:hover:after {
+    height: 100%;
+    z-index: -1;
+  }
+}
