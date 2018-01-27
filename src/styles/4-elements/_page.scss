@@ -1,6 +1,6 @@
 // Page
 
-$clr-bg: $color-bg;
+$clr-bg: $color-lightest-grey;
 $clr-text: $color-text;
 
 html {  
@@ -14,5 +14,7 @@ body {
   font-size: 1.6rem;
   background: $clr-bg;
   color: $clr-text;
+  -moz-osx-font-smoothing: grayscale;
+  counter-reset: section;
 }
 

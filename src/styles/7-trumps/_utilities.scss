@@ -38,8 +38,10 @@ $clr-hli-text: $color-red;
 
 .u-skew {
   transform: skew(0, -7.43deg);
+  transform-origin: 0;
 }
 
 .u-unskew {
   transform: skew(0, 7.43deg);
+  transform-origin: 0;
 }

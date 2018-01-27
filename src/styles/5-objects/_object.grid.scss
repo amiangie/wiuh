@@ -41,8 +41,12 @@
       flex-basis: calc(#{$column-width} - #{$global_grid-gap});
     }
   }
+
+  &.-centered {
+    align-items: center;
+  }
   
-  @include bp-small {
+  @include bp-middle {
     margin: 0;
 
     .o-grid__item:not(.o-grid__item--inflexible) {

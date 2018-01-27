@@ -1,0 +1,56 @@
+// Who section
+$clr-bg: $color-lightest-grey;
+$clr-subheading: $color-middle-grey;
+$clr-text: $color-black;
+$clr-section-number: $color-red;
+
+
+.c-who {
+  position: relative;
+  background: $clr-bg;
+  padding-top: 8.5rem;
+  padding-bottom: 6rem;
+}
+
+.c-who__content {
+  padding-bottom: 9rem;
+  
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -3.8rem;
+    width: 47rem;
+    height: 5rem;
+    max-width: 100%;
+    background: url(../assets/images/lines-1.svg)
+                bottom left
+                no-repeat;
+  }
+  
+  h2 {
+    &:before {
+      counter-increment: section;
+      content: "0"counter(section)".";
+      display: block;
+      width: 15rem;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: $clr-section-number;
+      border-bottom: .3rem solid $clr-section-number;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  p {
+    font-size: 2rem;
+    color: $clr-text;
+    margin: 3rem 0 11rem 0;
+  }
+}
+
+.c-who__subheading {
+  font-size: 2.5rem;
+  color: $clr-subheading;
+}
