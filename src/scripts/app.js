@@ -4,5 +4,7 @@
  */
 
 var greet = require('./greeting.js')
+var particles = require('./particles.js')
 
-greet('World');
+greet('🤦‍♂️');
+//particles('particles-js');

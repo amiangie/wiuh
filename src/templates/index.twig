@@ -1,10 +1,16 @@
 {% extends "layouts/base.twig" %}
 {% set pageName = 'Index' %}
 
-{% block content %}
-  <h1>Hello <span class="js-greeting"></span></h1>
+
+{% block pageHeader %}
+  {% include 'partials/header.twig' %}
 {% endblock %}
 
-{% block aside %}
-  <p>Custom sidebar</p>
+
+{% block pageContent %}
+  <h1>Hello <span class="js-greeting"></span></h1>
+  
+  <h3>Red</h3>
+  
+  <div id="particles-js"></div>
 {% endblock %}

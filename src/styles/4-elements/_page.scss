@@ -1,14 +1,18 @@
 // Page
 
-html {
-  background: $color-bg;
-  color: $color-text;
+$clr-bg: $color-bg;
+$clr-text: $color-text;
+
+html {  
   font-size: 62.5%;
   line-height: 2;
-  padding: 1rem;
 }
 
 body {
+  font-family: 'Klavika', sans-serif;
+  font-weight: 400;
   font-size: 1.6rem;
+  background: $clr-bg;
+  color: $clr-text;
 }
 

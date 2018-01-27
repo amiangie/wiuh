@@ -1,16 +1,23 @@
 // Headings
+$clr-h1: $color-black;
+$clr-h3: $color-red;
 
 h1, h2 {
-  color: $color-heading;
-  font-weight: 400;
+  color: $clr-h1;
+  font-weight: 500;
   line-height: 1.375;
   margin: 0 0 2rem;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 10rem;
+}
+
+h3 {
+  font-size: 3rem;
+  color: $clr-h3;
 }
