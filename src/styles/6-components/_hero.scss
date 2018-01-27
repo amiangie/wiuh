@@ -3,33 +3,70 @@
 $clr-text: $color-white;
 
 .c-hero {
+  position: relative;
   height: 100vh;
   width: 100%;
+  min-height: 60rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   
-  &__content {
-    color: $clr-text;
+  &:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url(../assets/images/hero.jpg)
+                top center
+                no-repeat;
+    background-size: cover;
+    mix-blend-mode: multiply;
+    opacity: 0.55;
+    z-index: -1;
   }
   
-  &__accent {
-    font-size: 3rem;
-    line-height: 1;
+  &:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(255, 0, 0, 0.75);
+    z-index: -2;
   }
+}
   
-  &__preheading {
-    font-family: Arial, Helvetica, sans-serif;
-    font-variant: small-caps;
-    font-size: 1.2rem;
-    letter-spacing: .2em;
-    line-height: 4;
-  }
-  
-  &__heading {
-    width: 78%;
-    line-height: 1.3;
-    margin-bottom: 0;
-    color: $clr-text;
-  }
+.c-hero__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.c-hero__content {
+  color: $clr-text;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.c-hero__accent {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.c-hero__preheading {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-size: 1.2rem;
+  letter-spacing: .4em;
+  margin: 1.3rem 0 1.5rem 0;
+}
+
+.c-hero__heading {
+  width: 78%;
+  color: $clr-text;
+  line-height: 1.3;
+  margin-bottom: 0;
 }
