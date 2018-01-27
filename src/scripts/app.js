@@ -7,4 +7,4 @@ var greet = require('./greeting.js')
 var particles = require('./particles.js')
 
 greet('🤦‍♂️');
-//particles('particles-js');
+particles('particles-js');

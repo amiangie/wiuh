@@ -4,6 +4,11 @@ $clr-link-hover: $color-red;
 $clr-link-border: $color-black;
 
 .c-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,6 +41,7 @@ $clr-link-border: $color-black;
     display: block;
     background: $clr-link-border;
     transition: height .25s;
+    z-index: -1;
   }
   
   &:hover {
@@ -44,6 +50,5 @@ $clr-link-border: $color-black;
   
   &:hover:after {
     height: 100%;
-    z-index: -1;
   }
 }
