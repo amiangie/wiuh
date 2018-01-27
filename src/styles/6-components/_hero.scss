@@ -1,0 +1,35 @@
+// First "hero" section
+
+$clr-text: $color-white;
+
+.c-hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  &__content {
+    color: $clr-text;
+  }
+  
+  &__accent {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  
+  &__preheading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-size: 1.2rem;
+    letter-spacing: .2em;
+    line-height: 4;
+  }
+  
+  &__heading {
+    width: 78%;
+    line-height: 1.3;
+    margin-bottom: 0;
+    color: $clr-text;
+  }
+}

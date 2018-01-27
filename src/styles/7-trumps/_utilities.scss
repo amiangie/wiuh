@@ -1,4 +1,8 @@
 // Utilities
+$clr-hl: $color-black;
+$clr-hl-text: $color-white;
+$clr-hli: $color-white;
+$clr-hli-text: $color-red;
 
 /* Hide visually but not from screen readers */
 /* you can't see it, but it's there */
@@ -21,3 +25,13 @@
   overflow: hidden;
 }
 
+.u-highlight {
+  background: $clr-hl;
+  color: $clr-hl-text;
+  padding: .1em 0.5ch;
+  
+  &.-inverted {
+    background: $clr-hli;
+    color: $clr-hli-text;
+  }
+}
