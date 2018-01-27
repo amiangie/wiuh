@@ -17,18 +17,38 @@ $clr-nav-link: $color-white;
 }
 
 .c-nav__link {
+  position: relative;
   color: $clr-nav-link;
   text-decoration: none;
   transition: all .25s;
   
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: .2rem;
+    left: 0;
+    width: 100%;
+    height: .1rem;
+    background: #fff;
+    opacity: 0;
+    transition: height 0.25s, opacity 0.25s, transform 0.25s;
+    transform: translateY(-1rem);
+  }
+  
   &:hover {
-    font-size: 1.2em;
     color: $clr-nav-link;
+  }
+  
+  &:hover:after {
+    height: .3rem;
+    opacity: 1;
+    transform: translateY(.7rem);
   }
 }
 
 .c-nav__logo {
   width: 8.5rem;
+  margin-top: -.75rem;
 }
 
 @include bp-small {
