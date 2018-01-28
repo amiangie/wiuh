@@ -1,0 +1,52 @@
+// Team section
+$clr-bg: $color-white;
+$clr-text:  rgba($color-black, .6);
+$clr-border:  $color-lightest-grey;
+
+.c-team {
+  position: relative;
+  margin-top: 20rem;
+  padding-top: 12rem;
+  padding-bottom: 25rem;
+  background: $clr-bg;
+  overflow: hidden;
+  border-bottom: .7rem solid $clr-border;
+  
+  &:after {
+    content: ''; 
+    position: absolute;
+    height: 105%;
+    width: 100%;
+    bottom: 0;
+    right: -5rem;
+    background: $clr-bg
+                url(../assets/images/team.jpg)
+                right bottom
+                no-repeat;
+    background-size: contain;
+    transform: skew(0, 7.43deg);
+    transform-origin: 0;
+    z-index: -1;
+  }
+}
+
+.c-team__content {
+  h2 {
+    font-size: 6rem;
+    line-height: 1;
+    margin: 4rem 0 5.5rem 0;
+    
+    .c-link {
+      --fs: 1em;
+      
+      &:hover:after {
+        height: 120%;
+      }
+    }
+  }
+  
+  p {
+    line-height: 1.6;
+    color: $clr-text;
+  }
+}
