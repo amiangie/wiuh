@@ -1,0 +1,52 @@
+// Brands section
+
+$clr-text: $color-black;
+$clr-number: $color-red;
+
+
+.c-brands {
+  
+}
+
+.c-brands__header {
+  h2 {
+    position: relative;
+    font-size: 6rem;
+    line-height: 1;
+    margin-bottom: 0;
+    
+    &:before {
+      counter-increment: section;
+      content: "0"counter(section)".";
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: $clr-number;
+      margin-bottom: 1rem;
+      position: absolute;
+      left: 14rem;
+      top: -6.3rem;
+    }
+    
+    &:after {
+      content: ''; 
+      display: block;
+      width: 11.4rem;
+      height: .4rem;
+      background: $clr-text;
+      position: absolute;
+      left: 0;
+      top: -5.5rem;
+    }
+  }
+  
+  p {
+    text-align: right;
+    margin-bottom: 0;
+    color: $clr-text;
+  }
+}
+
+.c-brands__content {
+  
+
+}

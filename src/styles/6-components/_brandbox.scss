@@ -1,0 +1,13 @@
+// Single brand box
+
+$clr-border: #e4e8ea;
+$clr-border-active: #ced2d4;
+
+.c-brandbox {
+  --border: $clr-border;
+  border: 1px solid var(--border);
+  
+  &:hover {
+    --border: $clr-border-active;
+  }
+}

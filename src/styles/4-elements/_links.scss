@@ -1,7 +1,10 @@
 // Links
 
+$clr-link: $color-red;
+
 a {
-  text-decoration: underline;
+  text-decoration: none;
+  color: $clr-link;
 
   &:hover {
     color: $color-text;
