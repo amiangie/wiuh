@@ -50,3 +50,34 @@ $clr-border:  $color-lightest-grey;
     color: $clr-text;
   }
 }
+
+@include bp-middle {
+  .c-team {
+    padding-top: 0rem;
+    padding-bottom: 10rem;
+    
+    &:after {
+      display: none;
+    }
+  }
+  
+  .c-team__content {
+    text-align: center;
+  }
+}
+
+@include bp-small {
+  .c-team {
+    padding-top: 5rem;
+  }
+  
+  .c-team__content {
+    h2 {
+      font-size: 4rem;
+      
+      .c-link {
+        display: inline-block;
+      }
+    }
+  }
+}
