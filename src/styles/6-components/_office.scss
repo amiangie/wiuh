@@ -1,0 +1,31 @@
+// Office section
+
+$clr-bg: $color-white;
+
+.c-office {
+  background: $clr-bg;
+  padding-top: 17rem;
+  padding-bottom: 7rem;
+}
+
+.c-office__content {
+  h2 {
+    font-size: 4.4rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    
+    &.c-numbered {
+      --line-colour: $color-black;
+      --line-length: 11.4rem;
+      
+      &:before {
+        position: relative;
+        top: -5rem;
+      }
+    }
+  }
+  
+  a {
+    font-weight: 500;
+  }
+}
