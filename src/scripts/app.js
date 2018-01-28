@@ -9,4 +9,4 @@ const carousel = require('./carousel.js')
 
 greet('🤦‍♂️');
 //particles('particles-js');
-carousel('.Wallop');
+carousel('.Wallop', true, true);
