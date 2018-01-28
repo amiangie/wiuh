@@ -5,13 +5,46 @@ $clr-text-inv: $color-white;
 $clr-highlight: $color-red;
 $clr-highlight-inv: $color-black;
 $clr-bg: $color-white;
+$clr-bg-red: $color-red;
+$clr-bg-black: $color-black;
 $clr-shadow: $color-lightest-grey;
 $clr-border: $color-light-grey;
 
 .c-card {
   border: .1rem solid $clr-border;
   padding: 3.4rem;
+  color: $clr-text;
   background: $clr-bg;
+  
+  &.-red {
+    color: $clr-text-inv;
+    background: $clr-bg-red;
+    
+    .c-card__title {
+      color: $clr-text-inv;
+    }
+  }
+  
+  &.-black {
+    color: $clr-text-inv;
+    background: $clr-bg-black;
+  }
+  
+  &.-shadowed {
+    position: relative;
+    
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -2rem;
+      bottom: -2rem;
+      z-index: -1;
+      width: 95%;
+      height: 70%;
+      background: $clr-shadow;
+    }
+  }
 }
 
 .c-card__icon {
@@ -25,6 +58,5 @@ $clr-border: $color-light-grey;
 }
 
 .c-card__description {
-  color: $clr-text;
   margin-bottom: 0;
 }
