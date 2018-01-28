@@ -1,0 +1,13 @@
+// Portfolio section
+
+.c-folio {
+  margin-top: -50rem;
+}
+
+.c-folio__heading {
+  &.c-numbered {
+    --line-colour: $color-black;
+    --line-length: 11.4rem;
+    --number-colour: $color-red;
+  }
+}

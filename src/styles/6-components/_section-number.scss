@@ -1,0 +1,19 @@
+// Section number
+
+.c-numbered {
+  --line-colour: $color-red;
+  --line-length: 14.5rem;
+  --number-colour: $color-red;
+  
+  &:before {
+    counter-increment: section;
+    content: "0"counter(section)".";
+    display: block;
+    width: var(--line-length);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--number-colour);
+    border-bottom: .3rem solid var(--line-colour);
+    margin-bottom: 1rem;
+  }
+}
