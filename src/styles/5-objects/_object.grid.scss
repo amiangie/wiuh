@@ -50,6 +50,10 @@
     align-items: flex-end;
   }
 
+  &.-stretched {
+    align-items: stretch;
+  }
+
   &.-justified {
     justify-content: space-between;
   }

@@ -3,12 +3,9 @@
 $clr-text: $color-black;
 $clr-number: $color-red;
 
-
-.c-brands {
-  
-}
-
 .c-brands__header {
+  margin-bottom: 5rem;
+  
   h2 {
     position: relative;
     font-size: 6rem;
@@ -23,7 +20,7 @@ $clr-number: $color-red;
       color: $clr-number;
       margin-bottom: 1rem;
       position: absolute;
-      left: 14rem;
+      left: 15.5rem;
       top: -6.3rem;
     }
     
@@ -34,7 +31,7 @@ $clr-number: $color-red;
       height: .4rem;
       background: $clr-text;
       position: absolute;
-      left: 0;
+      left: 1.5rem;
       top: -5.5rem;
     }
   }
@@ -46,7 +43,16 @@ $clr-number: $color-red;
   }
 }
 
-.c-brands__content {
-  
-
+@include bp-middle {
+  .c-brands__header {
+    h2 {
+      &:before {
+        left: 14rem;
+      }
+      
+      &:after {
+        left: 0;
+      }
+    }
+  }
 }
