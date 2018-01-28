@@ -75,3 +75,19 @@ $clr-highlight: $color-red;
     }
   }
 }
+
+@include bp-middle {
+  .c-reviews__carousel-controls {
+    width: 100%;
+  }
+  
+  .c-reviews__carousel-item {
+    min-height: 12rem;
+  }
+}
+
+@include bp-small {
+  .c-reviews__carousel-list {
+    height: 18rem;
+  }
+}

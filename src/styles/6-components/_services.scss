@@ -88,6 +88,10 @@ $clr-section-line: $color-black;
 }
 
 @include bp-small {
+  .c-services {
+    padding-bottom: 50rem;
+  }
+  
   .c-services__content {
     grid-template-columns: 1fr;
     grid-template-areas: 

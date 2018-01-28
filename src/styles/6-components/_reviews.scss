@@ -10,3 +10,9 @@
     text-align: center;
   }
 }
+
+@include bp-small {
+  .c-reviews {
+    margin-top: 8rem;
+  }
+}
