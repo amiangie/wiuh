@@ -1,7 +1,8 @@
 // Portfolio section
 
 .c-folio {
-  margin-top: -50rem;
+  position: relative;
+  top: -50.5rem;
 }
 
 .c-folio__heading {
@@ -9,5 +10,21 @@
     --line-colour: $color-black;
     --line-length: 11.4rem;
     --number-colour: $color-red;
+  }
+}
+
+.c-folio__content {
+  
+}
+
+.c-folio__slider {
+  
+}
+
+.c-folio__text {
+  .c-link {
+    --border-color: $color-black;
+    --fs: 1em;
+    --padding: .5rem;
   }
 }
