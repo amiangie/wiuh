@@ -2,11 +2,47 @@
   <div class="o-wrapper u-unskew c-folio__content">
     <h2 class="c-folio__heading c-numbered">Portfolio</h2>
     
-    <div class="o-grid">
-      <div class="c-folio__slider o-grid__item o-grid__item--8-12">
+    <div class="o-grid -bottomed -justified">
+      <div class="o-grid__item o-grid__item--8-12">
+        
+        <div class="c-folio__carousel Wallop Wallop--rotate">
+          <div class="c-folio__carousel-list Wallop-list">
+            <div class="c-folio__carousel-item Wallop-item Wallop-item--current"
+                 style="background-image: url('../assets/images/carousel/item3.jpg')" 
+                 data-title="Not really us. vaporwave-it @ tumblr" />
+            </div>
+            <div class="c-folio__carousel-item Wallop-item"
+                 style="background-image: url('../assets/images/carousel/item2.gif')" 
+                   data-title="Apple IIGS, most powerful of the Apple II family. lzawienie @ tumblr" />
+            </div>
+            <div class="c-folio__carousel-item Wallop-item"
+                 style="background-image: url('../assets/images/carousel/item1.gif')" 
+                 data-title=" a e s t h e t i c . supyrb @ tumblr" />
+            </div>
+          </div>
+          
+          <div class="c-folio__carousel-controls">
+            <div class="c-folio__carousel-buttons">
+              <button class="c-folio__carousel-button -prev Wallop-buttonPrevious">
+                <span class="u-visuallyhidden">Previous slide</span>
+              </button>
+              <button class="c-folio__carousel-button -next Wallop-buttonNext">
+                <span class="u-visuallyhidden">Next slide</span>
+              </button>  
+            </div>
+            
+            <p class="c-folio__carousel-title js-title"></p>
+            
+            <div class="c-carousel-dots">
+              <button class="c-carousel-dot -active js-dot">go to item 1</button>
+              <button class="c-carousel-dot js-dot">go to item 2</button>
+              <button class="c-carousel-dot js-dot">go to item 3</button>      
+            </div>
+          </div>
+        </div>
         
       </div>
-      <div class="c-folio__text o-grid__item o-grid__item--4-12">
+      <div class="c-folio__text o-grid__item o-grid__item--3-12">
         <h3>Liked?</h3>
         <p class="u-enlarged">Then we can <a href="" class="c-link">work together</a></p>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <strong>Lorem Ipsum has been the industry's standard</strong> dummy text.</p>

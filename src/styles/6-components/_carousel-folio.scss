@@ -1,0 +1,29 @@
+// Folio carousel
+$clr-bg: $color-red;
+
+.c-folio__carousel-list {
+  position: relative;
+  overflow: visible !important; // i'm so sorry
+  pointer-events: none;
+  width: 100%;
+  height: 0;
+  padding-bottom: 83%;
+  
+  &:after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 91.1%;
+    position: absolute;
+    top: 9rem;
+    right: -3rem;
+    background: red;
+    z-index: -1;
+  }
+}
+
+.c-folio__carousel-item {
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 83%;
+}

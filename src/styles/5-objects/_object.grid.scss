@@ -45,6 +45,14 @@
   &.-centered {
     align-items: center;
   }
+
+  &.-bottomed {
+    align-items: flex-end;
+  }
+
+  &.-justified {
+    justify-content: space-between;
+  }
   
   @include bp-middle {
     margin: 0;

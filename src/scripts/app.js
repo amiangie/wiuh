@@ -3,8 +3,10 @@
   Author: angie
  */
 
-var greet = require('./greeting.js')
-var particles = require('./particles.js')
+const greet = require('./greeting.js')
+const particles = require('./particles.js')
+const carousel = require('./carousel.js')
 
 greet('🤦‍♂️');
-particles('particles-js');
+//particles('particles-js');
+carousel('.Wallop');

@@ -16,5 +16,6 @@ body {
   color: $clr-text;
   -moz-osx-font-smoothing: grayscale;
   counter-reset: section;
+  overflow-x: hidden;
 }
 
