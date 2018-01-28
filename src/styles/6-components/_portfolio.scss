@@ -15,13 +15,30 @@ $clr-highlight: $color-black;
 }
 
 .c-folio__content {
+  position: relative;
+  
   .u-enlarged {
     color: $clr-highlight;
     margin-bottom: 3.5rem;
   }
+  
+  &:after {
+    content: ''; 
+    position: absolute;
+    top: calc(100% - 3rem);
+    right: 19.8%;
+    display: block;
+    width: 53.5rem;
+    height: 18rem;
+    background: url(../assets/images/lines-3.svg)
+                top center 
+                no-repeat;
+  }
 }
 
 .c-folio__text {
+  margin-bottom: 10rem;
+  
   .c-link {
     --border-color: $color-black;
     --fs: 1em;
