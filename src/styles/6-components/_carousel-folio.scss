@@ -1,5 +1,7 @@
 // Folio carousel
 $clr-bg: $color-red;
+$clr-arrow: $color-dark-grey;
+$clr-arrow-active: $color-red;
 
 .c-folio__carousel-list {
   position: relative;
@@ -28,13 +30,38 @@ $clr-bg: $color-red;
   padding-bottom: 83%;
 }
 
+.c-folio__carousel-controls {
+  display: flex;
+  align-items: center;
+  padding-right: 2rem;
+  height: 9rem;
+  width: 100%;
+}
+
+.c-folio__carousel-buttons {
+  display: flex;
+}
+
+.c-folio__carousel-button {
+  height: 2.5rem;
+  width: 2.5rem;
+  
+  path {
+    fill: $clr-arrow;
+    transition: fill .25s;
+  }
+  
+  &:hover path {
+    fill: $clr-arrow-active;
+  }
+}
+
 @include bp-middle {
   .c-folio__carousel-list {
     &:after {
       right: -3rem;
       left: -3rem;
       width: auto;
-//      width: 100%;
     }
   } 
 }
