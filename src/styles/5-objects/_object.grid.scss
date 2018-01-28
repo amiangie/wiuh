@@ -57,6 +57,10 @@
   &.-justified {
     justify-content: space-between;
   }
+
+  &.-centered-x {
+    justify-content: center;
+  }
   
   @include bp-middle {
     margin: 0;

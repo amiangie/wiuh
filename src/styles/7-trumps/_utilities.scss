@@ -34,6 +34,11 @@ $clr-hli-text: $color-red;
     background: $clr-hli;
     color: $clr-hli-text;
   }
+  
+  &.-doubleinverted {
+    color: $clr-hli;
+    background: $clr-hli-text;
+  }
 }
 
 .u-enlarged {

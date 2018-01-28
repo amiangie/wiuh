@@ -6,16 +6,18 @@ const carousel = function (ele, showDots = false, showTitle = false) {
   const carouselItems = carousel.allItemsArray;
   
   if(showDots) {
-    carouselItems.forEach((item, i) => {
-      const dotsHolder = document.querySelector('.js-dots');
+    if([...carouselEle.querySelectorAll('.js-dot')].length == 0) {
+      carouselItems.forEach((item, i) => {
+        const dotsHolder = document.querySelector('.js-dots');
 
-      const dotTemplate = `
-        <button class="c-carousel__dot js-dot">
-          <span class="u-visuallyhidden">Go to item ${i + 1}</span>
-        </button>
-      `;
-      dotsHolder.insertAdjacentHTML('beforeend', dotTemplate);
-    });  
+        const dotTemplate = `
+          <button class="c-carousel__dot js-dot">
+            <span class="u-visuallyhidden">Go to item ${i + 1}</span>
+          </button>
+        `;
+        dotsHolder.insertAdjacentHTML('beforeend', dotTemplate);
+      }); 
+    }  
   
     const dots = [...carouselEle.querySelectorAll('.js-dot')];
   
