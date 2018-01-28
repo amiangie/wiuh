@@ -21,3 +21,9 @@ h3 {
   font-size: 3rem;
   color: $clr-h3;
 }
+
+@include bp-small {  
+  h2 {
+    font-size: 7rem;
+  }
+}

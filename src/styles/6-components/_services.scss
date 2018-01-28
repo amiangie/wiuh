@@ -24,6 +24,7 @@ $gap: $global_grid-gap;
   grid-area: heading;
   justify-self: end;
   align-self: end;
+  padding-bottom: 2rem;
 }
 
 .c-service:nth-of-type(1) {
