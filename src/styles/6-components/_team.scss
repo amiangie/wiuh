@@ -5,7 +5,7 @@ $clr-border:  $color-lightest-grey;
 
 .c-team {
   position: relative;
-  margin-top: 20rem;
+  margin-top: 30rem;
   padding-top: 12rem;
   padding-bottom: 25rem;
   background: $clr-bg;
@@ -68,6 +68,7 @@ $clr-border:  $color-lightest-grey;
 
 @include bp-small {
   .c-team {
+    margin-top: 20rem;
     padding-top: 5rem;
   }
   
