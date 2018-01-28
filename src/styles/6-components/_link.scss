@@ -32,5 +32,6 @@
   
   &:hover:after {
     height: calc(100% + var(--padding) + var(--padding));
+    height: 150%;
   }
 }
