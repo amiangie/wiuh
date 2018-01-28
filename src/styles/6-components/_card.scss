@@ -1,0 +1,30 @@
+// Single service card
+
+$clr-text: $color-black;
+$clr-text-inv: $color-white;
+$clr-highlight: $color-red;
+$clr-highlight-inv: $color-black;
+$clr-bg: $color-white;
+$clr-shadow: $color-lightest-grey;
+$clr-border: $color-light-grey;
+
+.c-card {
+  border: .1rem solid $clr-border;
+  padding: 3.4rem;
+  background: $clr-bg;
+}
+
+.c-card__icon {
+  font-size: 4.5rem;
+  line-height: 1.2;
+}
+
+.c-card__title {
+  margin: 2rem 0 2.8rem 0;
+  line-height: 1.2;
+}
+
+.c-card__description {
+  color: $clr-text;
+  margin-bottom: 0;
+}

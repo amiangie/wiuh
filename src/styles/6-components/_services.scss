@@ -1,7 +1,39 @@
 // Services section
 
 $clr-bg: $color-white;
+$gap: $global_grid-gap;
 
 .c-services {
   background: $clr-bg;
+}
+
+.c-services__content {
+  position: relative;
+  top: -10.5rem;
+  display: grid;
+  grid-gap: $gap;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+//  grid-template-rows: repeat(auto-fill, minmax(30rem, 1fr));
+}
+
+.c-services__title {
+  grid-column: 2 / 4;
+  grid-row: 1 / 1;
+}
+
+.c-service:nth-of-type(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 1;
+}
+
+.c-service.-shadowed {
+  grid-column: 2 / 3;
+  grid-row: 3 / 3;
+}
+
+.c-service.-image {
+  border: none;
+  padding-top: 6rem;
+  grid-column: 1 / 2;
+  grid-row: 3 / 3;
 }
