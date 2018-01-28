@@ -2,6 +2,8 @@
 
 $clr-bg: $color-white;
 $gap: $global_grid-gap;
+$clr-section-number: $color-red;
+$clr-section-line: $color-black;
 
 .c-services {
   background: $clr-bg;
@@ -25,6 +27,29 @@ $gap: $global_grid-gap;
   justify-self: end;
   align-self: end;
   padding-bottom: 2rem;
+  
+  &:before {
+    counter-increment: section;
+    content: "0"counter(section)".";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 7.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $clr-section-number;
+  }
+  &:after {
+    content: '';
+    display: block;
+    height: 11.4rem;
+    width: .4rem;
+    position: absolute;
+    right: 1.8rem;
+    top: -6rem;
+    background: $clr-section-line;
+    margin-bottom: 1rem;
+  }
 }
 
 .c-service:nth-of-type(1) {
