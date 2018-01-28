@@ -74,6 +74,7 @@ $clr-dot: $color-white;
 }
 
 .c-carousel__dot {
+  position: relative;
   width: .7rem;
   height: .7rem;
   border-radius: 50%;
@@ -97,4 +98,29 @@ $clr-dot: $color-white;
       width: auto;
     }
   } 
+  
+  .c-carousel__dots {
+    display: none;
+  }
+  
+  .c-folio__carousel-title {
+    max-width: 90%;
+  }
+  
+  .c-folio__carousel-button {
+    path {
+      fill: $clr-text;
+    }
+    
+    &:hover path,
+    &:active path {
+      fill: $clr-text;
+    }
+  }
+}
+
+@include bp-small {
+  .c-folio__carousel-title {
+    font-size: 1em;
+  }
 }
