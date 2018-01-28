@@ -17,7 +17,7 @@ $clr-bg: $color-red;
     position: absolute;
     top: 9rem;
     right: -3rem;
-    background: red;
+    background: $clr-bg;
     z-index: -1;
   }
 }
@@ -26,4 +26,15 @@ $clr-bg: $color-red;
   background-size: cover;
   background-position: top center;
   padding-bottom: 83%;
+}
+
+@include bp-middle {
+  .c-folio__carousel-list {
+    &:after {
+      right: -3rem;
+      left: -3rem;
+      width: auto;
+//      width: 100%;
+    }
+  } 
 }
