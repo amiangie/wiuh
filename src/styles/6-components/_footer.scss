@@ -1,8 +1,55 @@
 // Footer
 
 $clr-bg: $color-white;
+$clr-text: $color-black;
+$clr-text-copy: rgba($color-black, .3);
 
 .c-footer {
-  background: $clr-bg;
+  font-size: 2.5rem;
+  color: $clr-text;
+  line-height: 1.5;
   margin-top: -2.5rem;
+  padding-top: 2rem;
+  background: $clr-bg;
+}
+
+.c-footer__logo {
+  width: 6rem;
+}
+
+.c-footer__cta {
+  font-size: 6rem;
+  font-weight: 500;
+  color: $clr-text;
+  line-height: 1;
+  margin-top: 3rem;
+  
+  .c-link {
+    --colour: $color-black;
+    --fs: 1em;
+    
+    &:hover:after {
+      height: 120%;
+    }
+  }
+}
+
+.c-footer__email.c-link {
+  --fs: 3rem;
+  --border-color: $color-black;
+}
+
+.c-footer__highlight {
+  text-align: center;
+  
+  .c-emoji-accent {
+    margin-right: 5rem;
+  }
+}
+
+.c-footer__copy {
+  font-size: 1.4rem;
+  color: $clr-text-copy;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
 }
