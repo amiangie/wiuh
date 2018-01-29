@@ -44,3 +44,27 @@ $clr-accent: $color-red;
     background: $clr-accent;
   }
 }
+
+@include bp-middle {
+  .c-quote {
+    width: 70%;
+    font-size: 4rem;
+    line-height: 1;
+    margin-top: 1em;
+    
+    &:before {
+      font-size: 10rem;
+      left: -5rem;
+      top: -3.5rem;
+    }
+  }
+  
+  .c-quote__author {
+    margin-top: 1em;
+  }
+}
+
+
+
+
+
