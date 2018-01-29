@@ -93,9 +93,9 @@ $clr-dot: $color-white;
 @include bp-middle {
   .c-folio__carousel-list {
     &:after {
-      right: -3rem;
-      left: -3rem;
       width: auto;
+      left: -2.5%;
+      right: -2.5%;
     }
   } 
   
