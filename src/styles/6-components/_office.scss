@@ -1,26 +1,31 @@
 // Office section
 
 $clr-bg: $color-white;
+$clr-text: $color-black;
 
 .c-office {
   background: $clr-bg;
-  padding-top: 17rem;
+  padding-top: 12rem;
   padding-bottom: 7rem;
 }
 
-.c-office__content {
+.c-office__content {  
+  position: relative;
+  
   h2 {
     font-size: 4.4rem;
     font-weight: 300;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     
     &.c-numbered {
       --line-colour: $color-black;
       --line-length: 11.4rem;
       
       &:before {
-        position: relative;
-        top: -5rem;
+        display: block;
+        margin-bottom: 8rem;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
       }
     }
   }
@@ -28,4 +33,26 @@ $clr-bg: $color-white;
   a {
     font-weight: 500;
   }
+  
+  &:after {
+    content: ''; 
+    display: block;
+    position: absolute;
+    bottom: -8.5rem;
+    left: 12rem;
+    width: 25rem;
+    height: 26rem;
+    transform: translateY(100%);
+    background: url(../assets/images/lines-4.svg)
+                center center
+                no-repeat;
+    background-size: contain;
+  }
+}
+
+.c-office__address {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.8;
 }
