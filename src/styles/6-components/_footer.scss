@@ -60,6 +60,8 @@ $clr-text-copy: rgba($color-black, .3);
 @include bp-middle {
   .c-footer {
     padding-top: 5rem;
+    padding-bottom: 7rem;
+    text-align: center;
   }
   
   .c-footer__cta {
