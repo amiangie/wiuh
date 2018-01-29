@@ -5,15 +5,33 @@ $clr-text: $color-black;
 $clr-text-copy: rgba($color-black, .3);
 
 .c-footer {
+  position: relative;
   font-size: 2.5rem;
   color: $clr-text;
   line-height: 1.5;
   margin-top: -2.5rem;
   background: $clr-bg;
+  
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: $clr-bg;
+    transform: skew(0, -7.43deg);
+    transform-origin: 0;
+  }
 }
 
 .c-footer__content {
-  overflow: hidden;
+  position: relative;
+  
+  * {
+    z-index: 1;
+  }
 }
 
 .c-footer__logo {
