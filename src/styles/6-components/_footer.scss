@@ -13,6 +13,10 @@ $clr-text-copy: rgba($color-black, .3);
   background: $clr-bg;
 }
 
+.c-footer__content {
+  overflow: hidden;
+}
+
 .c-footer__logo {
   width: 6rem;
 }
@@ -53,3 +57,24 @@ $clr-text-copy: rgba($color-black, .3);
   padding-top: 8rem;
   padding-bottom: 3rem;
 }
+
+@include bp-middle {
+  .c-footer {
+    padding-top: 5rem;
+  }
+  
+  .c-footer__cta {
+    margin-top: 0;
+    margin-bottom: 6rem;
+  }
+  
+  .c-footer__highlight {
+    display: none;
+  }
+  
+  .c-footer__copy {
+    padding-top: 5rem;
+  }
+}
+
+
