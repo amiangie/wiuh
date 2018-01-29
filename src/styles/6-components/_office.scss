@@ -7,6 +7,7 @@ $clr-text: $color-black;
   background: $clr-bg;
   padding-top: 12rem;
   padding-bottom: 7rem;
+  margin-bottom: 40rem;
 }
 
 .c-office__content {  
@@ -60,6 +61,7 @@ $clr-text: $color-black;
 @include bp-middle {
   .c-office {
     padding-top: 4rem;
+    margin-bottom: 7rem;
   }
   
   .c-office__content {

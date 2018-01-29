@@ -1,0 +1,46 @@
+// Quote section
+
+$clr-text: $color-black;
+$clr-accent: $color-red;
+
+.c-quote {
+  position: relative;
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: 500;
+  color: $clr-text;
+  text-align: center;
+  
+  &:before {
+    content: "“";
+    position: absolute;
+    left: -1.5ch;
+    top: -1.25ch;
+    font-family: 'Klavika', slab-serif;
+    font-size: 12rem;
+    color: $clr-accent;
+  }
+}
+
+.c-quote__footer {
+  font-weight: normal;
+  font-size: .5em;
+}
+
+.c-quote__author {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 500;
+  color: $clr-accent;
+  
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: .2rem;
+    width: 2.6rem;
+    margin-right: 1ch;
+    margin-top: -.1rem;
+    background: $clr-accent;
+  }
+}
