@@ -1,0 +1,41 @@
+$clr-text: $color-white;
+$left: $global_grid-gap;
+
+.c-more-holder {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+  .o-wrapper {
+    position: relative;
+  }
+}
+
+.c-more {
+  position: absolute;
+  bottom: 0;
+  left: $left;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-size: 1.2rem;
+  letter-spacing: .4em;
+  color: $clr-text;
+  height: 11.4rem;
+  z-index: 1;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    left: calc(50% - .4rem);
+    top: 3.5em;
+    display: block;
+    width: .4rem;
+    height: 100%;
+    background: $clr-text;
+  }
+  
+  &:hover {
+    color: $clr-text;
+  }
+}
