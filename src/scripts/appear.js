@@ -7,7 +7,7 @@ const appear = function(section, ele) {
       for(let i = 0; i < elements.length; i++)
         window.setTimeout(function() {
           elements[i].classList.add('appear');
-        }, 250 * i);
+        }, 300 * i);
     }
   };
 };
