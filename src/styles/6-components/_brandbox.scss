@@ -17,32 +17,19 @@ $clr-bg-hl: $color-red;
   text-align: center;
   background: $clr-bg;
   border: 1px solid $clr-border;
+  
+  transition: box-shadow .25s;
+  box-shadow: 42px 42px 0px -45px $clr-bg-hl;
 
   > * {
     opacity: var(--opacity);
     transition: opacity .25s;
   }
   
-  &:after {
-    content: ''; 
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 5rem;
-    width: 94.5%;
-    background: $clr-bg-hl;
-    z-index: -1;
-    transition: transform .25s;
-  }
-  
   &:hover {
     --opacity: 1;
     border-color: $clr-border-hover;
-  }
-  
-  &:hover:after {
-    transform: translateY(1.2rem) 
-               translateX(1.2rem);
+    box-shadow: 42px 42px 0px -30px $clr-bg-hl;
   }
 }
 
@@ -64,14 +51,8 @@ $clr-bg-hl: $color-red;
 
 @include bp-middle {
   .c-brandbox {
-    &:after {
-      height: 100%;
-      width: 100%;
-    }
-    
-    &:hover:after {
-      transform: translateY(.5rem) 
-                 translateX(.5rem);
+    &:hover {
+      box-shadow: -12px 13px 0px -9px $clr-bg-hl;
     }
   }
 }
