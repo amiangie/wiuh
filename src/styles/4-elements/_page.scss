@@ -28,6 +28,12 @@ body {
   clip-path: polygon(0px 0px, 100% 0px, 100.4% 97.5367%, 1px 99.4677%);
 }
 
+@include bp-middle {
+  .c-main {
+    clip-path: none; 
+  }
+}
+
 @media screen and (max-width: $bp-middle), screen and (max-height: 45rem) {
 //@media screen and (max-height: 45rem) {
   .c-main {
