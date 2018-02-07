@@ -16,22 +16,11 @@ $clr-text: $color-white;
     height: 100%;
     width: 100%;
     position: absolute;
-    background: url(../assets/images/hero.jpg)
+    background: url(../assets/images/hero-bg.png)
                 top center
                 no-repeat;
     background-size: cover;
-    mix-blend-mode: multiply;
-    opacity: 0.55;
     z-index: -1;
-  }
-  
-  &:after {
-    content: '';
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background: rgba(255, 0, 0, 0.75);
-    z-index: -2;
   }
 }
   
