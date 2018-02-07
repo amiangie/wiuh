@@ -12,6 +12,13 @@ $clr-text-copy: rgba($color-black, .3);
   margin-top: -2.5rem;
   background: $clr-bg;
   
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+  
+  
   &:before {
     content: '';
     display: block;
@@ -96,4 +103,11 @@ $clr-text-copy: rgba($color-black, .3);
   }
 }
 
-
+//@media screen and (max-width: $bp-middle) and (max-height: 45rem) {
+@media screen and (max-height: 45rem) {
+  .c-footer {
+    position: static;
+    padding-top: 30rem;
+    margin-top: -30rem;
+  }
+}
