@@ -1,0 +1,25 @@
+// This slider-dot-like thingy
+
+$clr-bg: $color-white;
+
+.c-sectiondots {
+  position: fixed;
+  left: 6rem;
+  left: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.c-sectiondots__item {
+  height: .2rem;
+  width: 2.9rem;
+  background: rgba($clr-bg, .3);
+  margin-bottom: 1.2rem;
+//  background-blend-mode: exclusion;
+  
+  &.-active {
+    width: 5.7rem;
+    background: rgba($clr-bg, 1);
+  }
+}

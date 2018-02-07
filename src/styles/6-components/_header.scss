@@ -24,7 +24,13 @@ $clr-link-border: $color-black;
   }
 }
 
+.c-header__cta {
+  color: $clr-link;
+  font-weight: 500;
+}
+
 .c-header__link {
+  display: inline-block;
   position: relative;
   text-decoration: none;
   font-weight: 500;
