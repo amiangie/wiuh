@@ -1,0 +1,23 @@
+
+// Animation-related stuff
+
+.c-appear {
+  opacity: 0;
+  transform: translateY(100%) scale(0);
+}
+
+.c-appear.appear {
+  animation: appear 1s normal forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) scale(0);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
