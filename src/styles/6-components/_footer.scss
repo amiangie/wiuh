@@ -103,8 +103,8 @@ $clr-text-copy: rgba($color-black, .3);
   }
 }
 
-//@media screen and (max-width: $bp-middle) and (max-height: 45rem) {
-@media screen and (max-height: 45rem) {
+@media screen and (max-width: $bp-middle), screen and (max-height: 45rem) {
+//@media screen and (max-height: 45rem) {
   .c-footer {
     position: static;
     padding-top: 30rem;

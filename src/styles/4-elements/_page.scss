@@ -25,11 +25,11 @@ body {
   z-index: 2;
   margin-bottom: 43rem;
   background: $clr-bg;
-  clip-path: polygon(0px 0, 100% 0px, 100.092% 97.6761%, 1px 99.4677%);
+  clip-path: polygon(0px 0px, 100% 0px, 100.4% 98.3099%, 1px 99.4677%);
 }
 
-//@media screen and (max-width: $bp-middle) and (max-height: 45rem) {
-@media screen and (max-height: 45rem) {
+@media screen and (max-width: $bp-middle), screen and (max-height: 45rem) {
+//@media screen and (max-height: 45rem) {
   .c-main {
     margin-bottom: 0; 
   }
