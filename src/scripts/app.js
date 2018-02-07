@@ -5,9 +5,9 @@
 
 const particles = require('./particles.js')
 const carousel = require('./carousel.js')
-const scrollto = require('./scrollto.js')
+const appear = require('./appear.js')
 
 particles('particles-js');
-scrollto('.js-scrollto');
+appear('.js-services', '.js-card');
 carousel('.Wallop', true, true);
 carousel('.Reviews ', true, false);

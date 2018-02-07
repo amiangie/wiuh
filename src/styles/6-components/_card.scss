@@ -30,18 +30,7 @@ $clr-border: $color-light-grey;
   
   &.-shadowed {
     position: relative;
-    
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      left: -2rem;
-      bottom: -2rem;
-      z-index: -1;
-      width: 95%;
-      height: 70%;
-      background: $clr-shadow;
-    }
+    box-shadow: -3rem 3rem 0px -1rem $clr-shadow;
   }
 }
 
@@ -58,3 +47,33 @@ $clr-border: $color-light-grey;
 .c-card__description {
   margin-bottom: 0;
 }
+
+
+
+
+
+// Animation-related stuff
+
+.c-card:not(.-image) {
+  opacity: 0;
+  transform: translateY(100%) scale(0);
+}
+
+.c-card.appear:not(.-image) {
+  animation: appear 1s normal forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) scale(0);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+
